@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
+import Menu from "./Menu";
 import "./Nav.scss";
-// import file in there::
 const Nav = () => {
   const [show, setShow] = useState(false);
   const transitionNavBar = () => {
@@ -20,7 +20,8 @@ const Nav = () => {
 
   return (
     <div>
-      <nav
+      <Menu />
+      {/* <nav
         className={`bg-black border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900`}
       >
         <div className="container flex flex-wrap items-center justify-between mx-auto">
@@ -107,7 +108,7 @@ const Nav = () => {
                 alt="user photo"
               />
             </button>
-            {/* <!-- Dropdown menu --> */}
+            <!-- Dropdown menu -->
             <div
               className="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
               id="user-dropdown"
@@ -179,7 +180,7 @@ const Nav = () => {
             </button>
           </div>
         </div>
-      </nav>
+      </nav> */}
     </div>
   );
 };
