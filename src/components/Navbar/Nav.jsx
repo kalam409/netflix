@@ -1,22 +1,22 @@
-import React, { useEffect, useState } from "react";
+// import React, { useEffect, useState } from "react";
 import Menu from "./Menu";
 import "./Nav.scss";
 const Nav = () => {
-  const [show, setShow] = useState(false);
-  const transitionNavBar = () => {
-    if (window.scrollY > 100) {
-      setShow(true);
-    } else {
-      setShow(false);
-    }
-  };
-  useEffect(() => {
-    window.addEventListener("scroll", transitionNavBar);
+  // const [show, setShow] = useState(false);
+  // const transitionNavBar = () => {
+  //   if (window.scrollY > 100) {
+  //     setShow(true);
+  //   } else {
+  //     setShow(false);
+  //   }
+  // };
+  // useEffect(() => {
+  //   window.addEventListener("scroll", transitionNavBar);
 
-    return () => {
-      window.removeEventListener("scroll", transitionNavBar);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("scroll", transitionNavBar);
+  //   };
+  // }, []);
 
   return (
     <div>
